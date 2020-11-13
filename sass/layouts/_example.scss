@@ -1,0 +1,44 @@
+.example {
+  padding-top: 0px;
+}
+.example-list {
+  display: flex;
+}
+
+.example-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.example .example-item + .example-item {
+  margin-left: 30px;
+}
+
+.example-item {
+  position: relative;
+  width: calc((100% -30px * 2) / 3);
+  z-index: 1;
+}
+
+.example-name-text {
+  position: absolute;
+  text-align: center;
+  padding: 27px;
+
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

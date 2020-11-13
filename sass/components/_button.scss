@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+  font-family: inherit;
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+  border-radius: 4px;
+  text-align: center;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+
+  &.secondary:hover,
+  &.secondary:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.button-submit {
+  text-align: center;
+  padding-top: 30px;
+}
+.button.first {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  border-color: transparent;
+  text-decoration: none;
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.button.secondary {
+  color: $primary-text-color;
+  background-color: $bg-color;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+}
+
+.hero-button-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+
+  background: $primary-white-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover .button-svg,
+  &:focus .button-svg {
+    fill: $accent-icon;
+  }
+}
+.hero-button-close-svg {
+  height: 11px;
+  widows: 11px;
+  fill: $primary-text-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.06;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.nav-address-svg {
+  margin-right: 10px;
+  fill: #757575;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.nav-address-svg.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.nav-address-svg.vector {
+  width: 10px;
+  height: 16px;
+}
+
+.header {
+  border: 1px solid #ececec;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.kontaktu-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.kontaktu-nav .item + .item {
+  margin-left: 50px;
+}

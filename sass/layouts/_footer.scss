@@ -1,0 +1,96 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-social {
+  margin-top: 12px;
+}
+.footer .container {
+  display: flex;
+}
+
+.footer-block {
+  margin-right: 30px;
+}
+
+.footer-title-join {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  height: 50px;
+  min-width: 358px;
+  padding: 16px;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list {
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.footer .button.first {
+  display: flex;
+  min-width: 200px;
+}
+
+.footer-title-sign {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.footer-svg {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  fill: $primary-white-color;
+}
+.address {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  font-style: normal;
+}
+.karta {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.address-kontaktu {
+  color: rgba(255, 255, 255, 0.6);
+}
