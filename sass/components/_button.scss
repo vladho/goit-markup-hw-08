@@ -43,33 +43,3 @@
   text-align: center;
   padding: 6px 22px;
 }
-
-.hero-button-close {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  top: 8px;
-  right: 8px;
-  height: 30px;
-  width: 30px;
-
-  background: $primary-white-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  &:hover .button-svg,
-  &:focus .button-svg {
-    fill: $accent-icon;
-  }
-}
-.hero-button-close-svg {
-  height: 11px;
-  widows: 11px;
-  fill: $primary-text-color;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-}

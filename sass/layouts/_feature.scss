@@ -5,7 +5,9 @@
 .feature-item {
   width: calc((100% - 30px * 3) / 4);
 
-  &:not(:last-child) {
+  @include for size(tablet) {
+  }
+  &: not(: last-child) {
     margin-right: 30px;
   }
   &::before {

@@ -1,9 +1,11 @@
+@import "./utils/mixin";
 @import "./utils/variables";
 @import "./base/common";
 @import "./base/section";
 @import "./components/button";
 @import "./components/logo";
-@import "./components/icons";
+@import "./components/social-icons";
+@import "./components/modal";
 @import "./components/form";
 @import "./components/links";
 @import "./layouts/navigation";
