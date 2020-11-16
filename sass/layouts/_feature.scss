@@ -10,6 +10,10 @@
 
   @include for-size(tablet) {
     width: calc((100% - 30px) / 2);
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
   @include for-size(desktop) {
     width: calc((100% - 30px * 3) / 4);
