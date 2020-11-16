@@ -11,7 +11,7 @@
     @media (min-width: $mobile) {
       @content;
     }
-  } @else if $range == tablet-only {
+  } @else if $range == tablet-max {
     @media (max-width: #{$desktop - 1}) {
       @content;
     }

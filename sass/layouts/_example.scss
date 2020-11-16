@@ -1,6 +1,6 @@
 .example {
   padding-top: 0px;
-  @include for-size(tablet-only) {
+  @include for-size(tablet-max) {
     display: none;
   }
 }
