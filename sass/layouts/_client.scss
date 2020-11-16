@@ -2,20 +2,56 @@
   display: flex;
   list-style: none;
   padding-left: 0px;
+  @include for-size(tablet-max) {
+    flex-wrap: wrap;
+    margin: 0px;
+  }
 }
 .client-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
+  margin-top: 0px;
   color: $primary-text-color;
 }
 
 .client-item {
-  width: calc((100% - 30px * 5) / 6);
+  width: calc((100% - 30px) / 2);
 
+  @include for-size(tablet) {
+    width: calc((100% - 30px * 2) / 3);
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 5) / 6);
+  }
+
+  &:nth-child(2n) {
+    @include for-size(mobile-only) {
+      margin-left: 30px;
+    }
+  }
+  &:not(:nth-child(3n)) {
+    @include for-size(tablet) {
+      margin-right: 30px;
+    }
+  }
   &:not(:last-child) {
-    margin-right: 30px;
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    @include for-size(tablet-max) {
+      margin-bottom: 30px;
+    }
   }
 }
 .client-link {
