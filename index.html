@@ -11,10 +11,17 @@
 
   <body>
     <!--nav-->
-    <!-- <header class="header">
-      <div class="container nav">
+    <header class="header">
+      <div class="container container-nav">
+                  <a href="./index.html" class="logo">Web<span class="part-logo">Studio</span></a>
+                  <button type="button" class="nav-menu-button is-open" data-menu-button>
+                    <svg class="nav-menu-svg">
+                      <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu"></use>
+                      <use class="icon-menu-close" href="./images/icon/sprite.svg#icon-menu-close"></use>
+                    </svg>
+                  </button>
+      <div class="menu-container is-open" data-menu>
         <nav class="nav">
-          <a href="./index.html" class="logo">Web<span class="part-logo">Studio</span></a>
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -40,8 +47,10 @@
             </a>
           </li>
         </ul>
+        </div>
+        
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Оглавление-->
           <section class="hero">
@@ -400,5 +409,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
