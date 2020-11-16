@@ -1,15 +1,23 @@
 .feature-list {
   display: flex;
+
+  @include for-size(mobile) {
+    flex-wrap: wrap;
+  }
 }
 
 .feature-item {
   width: calc((100% - 30px * 3) / 4);
 
-  @include for size(tablet) {
+  @include for-size(mobile) {
+    width: 100%;
+    outline: 2px solid red;
   }
-  &: not(: last-child) {
+
+  &:not(:last-child) {
     margin-right: 30px;
   }
+
   &::before {
     display: block;
     content: "";
