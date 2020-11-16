@@ -27,16 +27,12 @@
 
 .header {
   position: relative;
-  border: 1px solid #ececec;
 }
 
 .site-nav {
   display: flex;
 }
 
-.kontaktu-nav {
-  display: flex;
-}
 .site-nav .link,
 .kontaktu-nav .link {
   color: $primary-text-color;
@@ -135,9 +131,9 @@
     margin: 16px 0px;
   }
 
-  .header {
+  /*   .header {
     border-bottom: 1px solid #ececec;
-  }
+  } */
   .site-nav {
     flex-direction: column;
     align-items: center;
@@ -162,6 +158,7 @@
     margin-bottom: 0px;
   }
   .kontaktu-nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
@@ -169,7 +166,7 @@
 
   .kontaktu-nav .item {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
@@ -188,7 +185,9 @@
   .menu-container {
     display: flex;
     flex-grow: 1;
+
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-menu-button {
@@ -210,17 +209,52 @@
   .site-nav .item + .item {
     margin-left: 50px;
   }
-  .kontaktu-nav {
+  /*   .kontaktu-nav {
     display: flex;
     margin-left: auto;
-  }
-  .kontaktu-nav .item + .item {
-    margin-left: 50px;
-  }
+  } */
 
+  .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .kontaktu-nav .item:last-child {
+    margin-top: 10px;
+  }
+  .kontaktu-nav {
+    padding: 21px 0px;
+  }
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@include for-size(tablet-max) {
+  .nav-address-svg.vector {
+    height: 14px;
+  }
+}
+// для декстопа
+
+@include for-size(desktop) {
   .site-nav .link,
   .kontaktu-nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .kontaktu-nav {
+    display: flex;
+  }
+  .kontaktu-nav .item:last-child {
+    margin-top: 0px;
+  }
+  .kontaktu-nav .item + .item {
+    margin-left: 50px;
+  }
+  .kontaktu-nav {
+    padding: 0px;
+  }
+  .logo {
+    margin-right: 93px;
   }
 }
