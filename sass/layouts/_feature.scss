@@ -1,21 +1,29 @@
 .feature-list {
-  display: flex;
-
-  @include for-size(mobile) {
+  @include for-size(tablet) {
+    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .feature-item {
-  width: calc((100% - 30px * 3) / 4);
+  width: 100%;
 
-  @include for-size(mobile) {
-    width: 100%;
-    outline: 2px solid red;
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 3) / 4);
   }
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:nth-child(2n)) {
+    @include for-size(tablet) {
+      margin-right: 30px;
+    }
   }
 
   &::before {
@@ -53,6 +61,10 @@
   font-size: 14px;
   line-height: 1.07;
   text-transform: uppercase;
+
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
 }
 
 .feature-text {
