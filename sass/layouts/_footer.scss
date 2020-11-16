@@ -4,15 +4,86 @@
   padding-bottom: 60px;
 }
 .footer-social {
-  margin-top: 12px;
+  @include for-size(mobile-only) {
+    margin-top: 60px;
+  }
+  @include for-size(tablet) {
+    margin-top: 12px;
+  }
 }
 .footer .container {
-  display: flex;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  @include for-size(tablet-max) {
+    text-align: justify;
+  }
 }
 
 .footer-block {
+  width: 100%;
   margin-right: 30px;
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @include for-size(tablet-max) {
+    text-align: center;
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 3) / 4);
+  }
 }
+
+.footer-mail {
+  width: 100%;
+  @include for-size(desktop) {
+    width: calc((100% - 30px) / 2);
+  }
+  @include for-size(tablet-max) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+  text-decoration: none;
+}
+.part-logo-footer {
+  color: $primary-white-color;
+}
+
+.footer-block .logo {
+  margin-right: 0px;
+}
+
+.footer-social .social-icons {
+  justify-content: start;
+
+  @include for-size(tablet-max) {
+    justify-content: center;
+  }
+}
+
+.footer-social .social-icons-svg {
+  fill: $primary-white-color;
+}
+/* .footer-list {
+  margin-right: 30px;
+} */
 
 .footer-title-join {
   margin-top: 0px;
@@ -27,6 +98,11 @@
 
 .footer-form {
   display: flex;
+  margin-top: 20px;
+
+  /*   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
 }
 
 .footer-input {
@@ -36,7 +112,7 @@
   border-radius: 4px;
   background-color: transparent;
   height: 50px;
-  min-width: 358px;
+  width: calc((100% * 2 / 3) + 12px);
   padding: 16px;
   margin-right: 12px;
   font-size: 16px;
@@ -52,13 +128,13 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-list {
-  width: calc((100% - 30px * 3) / 4);
-}
-
 .footer .button.first {
   display: flex;
-  min-width: 200px;
+  max-width: calc((100% / 3) + 60px);
+  border: 0px;
+  @include for-size(mobile-only) {
+    margin-top: 20px;
+  }
 }
 
 .footer-title-sign {
