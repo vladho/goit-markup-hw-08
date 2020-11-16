@@ -19,17 +19,28 @@
 
 .hero-box {
   text-align: center;
-  width: 696px;
+
+  /*   @include for-size(desktop) {
+    width: 696px;
+  } */
 }
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
   color: $primary-white-color;
-  width: 696px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
