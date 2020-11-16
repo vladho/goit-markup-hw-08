@@ -1,5 +1,8 @@
 .example {
   padding-top: 0px;
+  @include for-size(tablet-only) {
+    display: none;
+  }
 }
 .example-list {
   display: flex;

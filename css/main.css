@@ -505,6 +505,12 @@ img {
   padding-top: 0px;
 }
 
+@media (max-width: 1199px) {
+  .example {
+    display: none;
+  }
+}
+
 .example-list {
   display: flex;
 }
