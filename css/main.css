@@ -734,7 +734,6 @@ img {
 @media (max-width: 1199px) {
   .client {
     flex-wrap: wrap;
-    margin: 0px;
   }
 }
 
