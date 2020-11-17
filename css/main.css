@@ -345,7 +345,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 462px;
+  max-width: 462px;
+  width: 100%;
   padding: 40px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
@@ -468,13 +469,13 @@ img {
     width: 40px;
   }
   .nav-menu-button .icon-menu {
-    display: block;
-  }
-  .nav-menu-button.is-open .icon-menu {
     display: none;
   }
-  .nav-menu-button.is-open .icon-menu-close {
+  .nav-menu-button.is-open .icon-menu {
     display: block;
+  }
+  .nav-menu-button.is-open .icon-menu-close {
+    display: none;
   }
   .header .logo {
     margin: 16px 0px;
