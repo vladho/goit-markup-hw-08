@@ -468,13 +468,13 @@ img {
     width: 40px;
   }
   .nav-menu-button .icon-menu {
-    display: none;
-  }
-  .nav-menu-button.is-open .icon-menu {
     display: block;
   }
-  .nav-menu-button.is-open .icon-menu-close {
+  .nav-menu-button.is-open .icon-menu {
     display: none;
+  }
+  .nav-menu-button.is-open .icon-menu-close {
+    display: block;
   }
   .header .logo {
     margin: 16px 0px;
