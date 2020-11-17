@@ -386,6 +386,7 @@ img {
 
 .header {
   position: relative;
+  border: 1px solid #ececec;
 }
 
 .site-nav {
@@ -424,7 +425,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   background: #2196f3;
@@ -564,7 +565,7 @@ img {
     margin-top: 10px;
   }
   .kontaktu-nav {
-    padding: 21px 0px;
+    padding: 20px 0px;
   }
   .logo {
     margin-right: 88px;
@@ -785,6 +786,19 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-item:nth-last-child(-n + 2) {
+    margin-top: 15px;
+  }
 }
 
 .menu-item:not(:last-child) {

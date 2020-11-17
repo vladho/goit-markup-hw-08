@@ -55,11 +55,26 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: calc((100% - 30px) / 2);
 
-  &:nth-child(3n) {
-    margin-right: 0px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 2) / 3);
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
 }
 
