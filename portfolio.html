@@ -6,39 +6,47 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="../css/portfolio.min.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!--шапка-->
     <header class="header">
-      <div class="container nav">
-        <nav class="nav">
-          <a href="./index.html" class="logo">Web<span class="part-logo">Studio</span></a>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="container container-nav">
+        <a href="./index.html" class="logo">Web<span class="part-logo">Studio</span></a>
+        <button type="button" class="nav-menu-button is-open" data-menu-button>
+          <svg class="nav-menu-svg">
+            <use class="icon-menu" href="./images/icon/sprite.svg#icon-menu"></use>
+            <use class="icon-menu-close" href="./images/icon/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="menu-container is-open" data-menu>
+          <nav class="nav">
+            <ul class="site-nav list">
+              <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
 
-        <ul class="kontaktu-nav list">
-          <li class="item">
-            <a href="" class="nav-address link">
-              <svg class="nav-address-svg envelope">
-                <use href="./images/icon/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a href="" class="nav-address link">
-              <svg class="nav-address-svg vector">
-                <use href="./images/icon/sprite.svg#icon-Vector"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="kontaktu-nav list">
+            <li class="item">
+              <a href="" class="nav-address link">
+                <svg class="nav-address-svg envelope">
+                  <use href="./images/icon/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="nav-address link">
+                <svg class="nav-address-svg vector">
+                  <use href="./images/icon/sprite.svg#icon-Vector"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -178,7 +186,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social footer-list footer-block">
+        <div class="footer-social footer-block">
           <h2 class="footer-title-join">присоединяйтесь</h2>
           <ul class="list social-icons">
             <li class="social-icons-item">
@@ -211,7 +219,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-social">
+        <div class="footer-social footer-mail">
           <h2 class="footer-title-sign">Подпишитесь на рассылку</h2>
           <form class="footer-form">
             <input class="footer-input" type="email" placeholder="E-mail" />
